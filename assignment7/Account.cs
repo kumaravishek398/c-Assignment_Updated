@@ -61,10 +61,10 @@ namespace AcceptInformation
               public static void CreateWriteReadFile()
         {
             Account account1=new Account();
-                                                      //path have to create manually
-               FileInfo fileInfo = new FileInfo(@"D:\write\sample.txt");  
-               StreamWriter write = fileInfo.CreateText();  
-                  write.WriteLine("Name: {0} ",account1.Name);       //writing in the txt file
+                                                      
+               FileInfo fileInfo = new FileInfo(@"D:\write\sample.txt");   //giving path
+               StreamWriter write = fileInfo.CreateText();      //creating a file in the given path
+                  write.WriteLine("Name: {0} ",account1.Name);       
                    write.WriteLine("BankName: {0}",account1.BankName);
                    write.WriteLine("AccountNo: {0}",account1.AccountNo);
                    write.WriteLine("AccountType: {0}",account1.AccountType); 
